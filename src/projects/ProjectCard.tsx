@@ -13,7 +13,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const handleEditClick = (projectBeingEdited: Project) => {
     console.log(projectBeingEdited);
   };
+  interface Person {
+    name: string;
+    age: number;
+  }
+  const array: Person[] = [
+    { name: 'ramon', age: 12 },
+    { name: 'genki', age: 11 },
+  ]
 
+  console.log(array);
   return (
     <div className="card">
       <img src={project.imageUrl} alt={project.name} />
@@ -25,7 +34,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <p>Budget : {project.budget.toLocaleString()}</p>
         <button onClick={() => { handleEditClick(project) }} className="bordered">
           <span className="icon-edit"></span>
-          Edit
+          Edit Yeah!!!! Hey
         </button>
       </section>
     </div>

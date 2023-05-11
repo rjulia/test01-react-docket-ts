@@ -3,7 +3,7 @@ import { Project } from "./Project";
 export const MOCK_PROJECTS = [
   new Project({
     id: 1,
-    name: "Johnson - Kutch",
+    name: "Johnson - Kutch - Nitroclik",
     description:
       "Fully-configurable intermediate framework. Ullam occaecati libero laudantium nihil voluptas omnis.",
     imageUrl: "/assets/placeimg_500_300_arch4.jpg",

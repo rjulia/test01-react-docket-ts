@@ -1,8 +1,8 @@
 import React from 'react'
-import { Project } from './Project';
+import { Project } from './Project'
 
 function formatDescription(description: string): string {
-  return description.substring(0, 60) + '...';
+  return description.substring(0, 60) + '...'
 }
 interface ProjectCardProps {
   project: Project;
@@ -11,8 +11,8 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const handleEditClick = (projectBeingEdited: Project) => {
-    console.log(projectBeingEdited);
-  };
+    console.log(projectBeingEdited)
+  }
   interface Person {
     name: string;
     age: number;
@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     { name: 'genki', age: 11 },
   ]
 
-  console.log(array);
+  console.log(array)
   return (
     <div className="card">
       <img src={project.imageUrl} alt={project.name} />

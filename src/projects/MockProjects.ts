@@ -1,4 +1,4 @@
-import { Project } from "./Project";
+import { Project } from "./Project"
 
 export const MOCK_PROJECTS = [
   new Project({
@@ -67,4 +67,4 @@ export const MOCK_PROJECTS = [
     budget: 53407,
     isActive: false,
   }),
-];
+]

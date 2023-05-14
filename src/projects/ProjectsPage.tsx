@@ -1,6 +1,7 @@
-import { MOCK_PROJECTS } from "./MockProjects";
+import React from 'react'
+import { MOCK_PROJECTS } from "./MockProjects"
 
-import ProjectList from './ProjectList';
+import ProjectList from './ProjectList'
 
 function ProjectsPage() {
   return (
@@ -12,4 +13,4 @@ function ProjectsPage() {
   )
 }
 
-export default ProjectsPage;
+export default ProjectsPage

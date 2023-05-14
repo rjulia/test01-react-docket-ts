@@ -1,5 +1,6 @@
 
-import { Project } from './Project';
+import React from 'react'
+import { Project } from './Project'
 import ProjectCard from './ProjectCard'
 
 interface ProjectListProps {
@@ -16,8 +17,8 @@ function ProjectList({ projects }: ProjectListProps) {
         </div>
       ))}
     </div>
-  );
+  )
 
 }
 
-export default ProjectList;
+export default ProjectList

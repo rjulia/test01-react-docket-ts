@@ -1,46 +1,21 @@
 import React from 'react'
 import {
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter
 } from "react-router-dom"
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import App from './App'
-import Product from './components/project/Project'
-import TypescriptHooks from './pages//TypescriptHooksPage'
 import reportWebVitals from './reportWebVitals'
-import ErrorPage from "./error-page"
-import UseReducerComponent from './components/use-reducer-component/UseReducerComponent'
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/product/:id",
-    element: <Product />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/typescripthooks",
-    element: <TypescriptHooks />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "/reducer",
-    element: <UseReducerComponent />,
-    errorElement: <ErrorPage />,
-  },
-])
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 )
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 )
 

@@ -1,20 +1,29 @@
 import React, { useReducer } from 'react'
 
-const initialState = {
+type State = {
+  counter: number,
+}
+
+const initialState:State = {
   counter: 100,
 }
+enum ACTIONS {
+  INCREMENT = 'increment',
+  DECREMENT = 'decrement',
+}
+
 type ACTIONTYPES =
-  | { type: 'increment'; payload: number }
-  | { type: 'decrement'; payload: number };
+  | { type: ACTIONS.INCREMENT; payload: number }
+  | { type: ACTIONS.DECREMENT; payload: number };
 
 function counterReducer(state: typeof initialState, action: ACTIONTYPES) {
   switch (action.type) {
-  case 'increment':
+  case ACTIONS.INCREMENT:
     return {
       ...state,
       counter: state.counter + action.payload,
     }
-  case 'decrement':
+  case ACTIONS.DECREMENT:
     return {
       ...state,
       counter: state.counter - action.payload,
@@ -33,7 +42,7 @@ function UseReducerComponent() {
         <button
           type='button'
           onClick={() => dispatch({
-            type: 'increment',
+            type: ACTIONS.INCREMENT,
             payload: 10,
           })}
         >
@@ -43,7 +52,7 @@ function UseReducerComponent() {
         |
         <button
           onClick={() => dispatch({
-            type: 'decrement',
+            type: ACTIONS.DECREMENT,
             payload: 5,
           })}
         >

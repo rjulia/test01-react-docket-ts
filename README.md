@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+## This projext is for mastering react-hook typescript and using Docker and docker componse
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
